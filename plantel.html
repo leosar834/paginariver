@@ -1,340 +1,369 @@
-<html>
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-</head>
-<title>Plantel Profesional</title> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plantel Profesional</title>
 <style>
-body{
-	background-image: url("fondo-blanco.png");
-	margin:0;
-	background-position:right;
-	}	
-header{
-	background-color:black;
-	color:white;
-	opacity:0.9;
-	padding:10px;
-	font-family:Mistral;
-	position:fixed;
-	top:0;
-	left:0;
-	right:0;
-	z-index:1000;	
-}
-header a{
-	color:red;
-	text-decoration:none;
-	margin-left:40px;
-}
-header a:hover{
-	text-decoration:underline;
-}
-	header h1{
-	margin-left:0px;
-	}
-footer{
-	background-color:black;
-	opacity:0.9;
-	padding:10px;
-	text-align:right;
-	color:white;
-	font-size:20;
-	margin-left:-8px;
-	margin-bottom:-8px;
-}
-footer a{
-	margin-left:20px;
-}
-p{
-	font-size:20;
-}
+    body {
+        background-image: url("fondo-blanco.png");
+        background-position: center;
+        background-size: cover;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        background-color: black;
+        color: white;
+        opacity: 0.9;
+        padding: 10px;
+        font-family: Mistral;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 28px;
+    }
+
+    header nav a {
+        color: red;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+    header nav a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        margin-top: 100px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1.section-title {
+        background-color: black;
+        opacity: 0.7;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .jugadores {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .jugador {
+        max-width: 200px;
+    }
+
+    .jugador p:first-child {
+        background-color: red;
+        font-size: 22px;
+        color: white;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .jugador img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        text-align: right;
+        padding: 15px 20px;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    footer a img {
+        width: 30px;
+        margin-left: 15px;
+        vertical-align: middle;
+    }
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        .jugador {
+            max-width: 45%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .jugador {
+            max-width: 90%;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        header nav a {
+            display: inline-block;
+            margin: 5px;
+            font-size: 16px;
+        }
+    }
 </style>
+</head>
+
+<body>
 <header>
-<h1>
-	Club Atletico River Plate
-	<a href="index.html">Inicio</a>
-
-	<a href="historia.html">Historia</a>
-	
-	<a href="mundoriver.html">Idolos</a>
-
-	<a href="monumental.html">Mas Monumental</a>
-
-	<a href="plantel.html">Plantel</a>
-
-	<a href="https://www.cariverplate.com.ar">Pagina Oficial</a>
-</h1>
+    <h1>Club Atlético River Plate</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="mundoriver.html">Ídolos</a>
+        <a href="monumental.html">Mas Monumental</a>
+        <a href="plantel.html">Plantel</a>
+        <a href="https://www.cariverplate.com.ar">Página Oficial</a>
+    </nav>
 </header>
 
-<p>-</p>
-<p>-</p>
-<p style="color:white;">-</p>
-<h1 style="background-color:black;opacity:0.6;color:white;text-align:center;">Futbol Profesional - Primera</h1>
-<h6 style="background-color:red;color:red;margin-top:-22px;">leonardo sarmiento</h6>
-	<p>ULTIMA ACTUALIZACION: ENERO 2025</p>
-<div style="max-width:1000px; margin:auto; padding:10px;">
-<h2>Arqueros</h2>
-<div style="display:flex;justify-content:center;gap:20px;text-align:center;">
-	
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>1</b></p>
-	<img src="armani.png" style="max-width:100%;height:auto;">
-	<p>Franco<b> Armani</b></p>
-	</div>
+<main>
+    <h1 class="section-title">Fútbol Profesional - Primera</h1>
+    <p><b>Última actualización:</b> Enero 2025</p>
 
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>25</b></p>
-	<img src="ledesma.png" style="max-width:100%;height:auto;">
-	<p>Jeremias <b>Ledesma</b></p>
-	</div>
+    <h2>Arqueros</h2>
+    <div class="jugadores">
+        <div class="jugador">
+            <p><b>1</b></p>
+            <img src="armani.png" alt="Armani">
+            <p>Franco <b>Armani</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>25</b></p>
+            <img src="ledesma.png" alt="Ledesma">
+            <p>Jeremías <b>Ledesma</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>37</b></p>
+            <img src="lavagnino.png" alt="Lavagnino">
+            <p>Lucas <b>Lavagnino</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>41</b></p>
+            <img src="beltran.png" alt="Beltrán">
+            <p>Santiago <b>Beltrán</b></p>
+        </div>
+    </div>
 
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>37</b></p>
-	<img src="lavagnino.png" style="max-width:100%;height:auto;">
-	<p>Lucas <b>Lavagnino</b></p>
-	</div>
+    <h2>Defensores</h2>
+    <div class="jugadores">
+        <div class="jugador">
+            <p><b>2</b></p>
+            <img src="gattoni.png" alt="Gattoni">
+            <p>Federico <b>Gattoni</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>4</b></p>
+            <img src="montiel.png" alt="Montiel">
+            <p>Gonzalo <b>Montiel</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>6</b></p>
+            <img src="pezzella.png" alt="Pezzella">
+            <p>Germán <b>Pezzella</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>14</b></p>
+            <img src="gonzalez-pirez.png" alt="Gonzalez Pirez">
+            <p>Leandro <b>González Pirez</b></p>
+        </div>
+    </div>
 
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>41</b></p>
-	<img src="beltran.png" style="max-width:100%;height:auto;">
-	<p>Santiago <b>Beltran</b></p>
-	</div>
-</div>
-<h2>Defensores</h2>
-<div style="display:flex;justify-content:center;gap:20px;text-align:center;">
+    <div class="jugadores">
+        <div class="jugador">
+            <p><b>16</b></p>
+            <img src="bustos.png" alt="Bustos">
+            <p>Fabricio <b>Bustos</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>17</b></p>
+            <img src="diaz.png" alt="Díaz">
+            <p>Paulo <b>Díaz</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>20</b></p>
+            <img src="casco.png" alt="Casco">
+            <p>Milton <b>Casco</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>21</b></p>
+            <img src="acuna.png" alt="Acuña">
+            <p>Marcos <b>Acuña</b></p>
+        </div>
+    </div>
 
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>2</b></p>
-	<img src="gattoni.png" style="max-width:100%;height:auto;">
-	<p>Federico <b>Gattoni</b></p>
-	</div>
+    <div class="jugadores">
+        <div class="jugador">
+            <p><b>28</b></p>
+            <img src="martinez-cuarta.png" alt="Martinez Cuarta">
+            <p>Lucas <b>Martínez Quarta</b></p>
+        </div>
+    </div>
 
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>4</b></p>
-	<img src="montiel.png" style="max-width:100%;height:auto;">
-	<p>Gonzalo <b>Montiel</b></p>
-	</div>
+    <h2>Mediocampistas</h2>
+    <div class="jugadores">
+        <div class="jugador">
+            <p><b>5</b></p>
+            <img src="kranevitter.png" alt="Kranevitter">
+            <p>Matías <b>Kranevitter</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>7</b></p>
+            <img src="rojas.png" alt="Rojas">
+            <p>Matías <b>Rojas</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>8</b></p>
+            <img src="meza.png" alt="Meza">
+            <p>Maximiliano <b>Meza</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>10</b></p>
+            <img src="lanzini.png" alt="Lanzini">
+            <p>Manuel <b>Lanzini</b></p>
+        </div>
+    </div>
 
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>6</b></p>
-	<img src="pezzella.png" style="max-width:100%;height:auto;">
-	<p>German <b>Pezzella</b></p>
-	</div>
+    <div class="jugadores">
+        <div class="jugador">
+            <p><b>18</b></p>
+            <img src="martinez.png" alt="Martinez">
+            <p>Gonzalo <b>Martínez</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>22</b></p>
+            <img src="castano.png" alt="Castaño">
+            <p>Kevin <b>Castaño</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>24</b></p>
+            <img src="perez.png" alt="Perez">
+            <p>Enzo <b>Pérez</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>26</b></p>
+            <img src="fernandez.png" alt="Fernandez">
+            <p>Ignacio <b>Fernández</b></p>
+        </div>
+    </div>
 
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>14</b></p>
-	<img src="gonzalez-pirez.png" style="max-width:100%;height:auto;">
-	<p>Leandro <b>Gonzalez Pirez</b></p>
-	</div>
-</div>
+    <div class="jugadores">
+        <div class="jugador">
+            <p><b>29</b></p>
+            <img src="aliendro.png" alt="Aliendro">
+            <p>Rodrigo <b>Aliendro</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>30</b></p>
+            <img src="mastantuono.png" alt="Mastantuono">
+            <p>Franco <b>Mastantuono</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>31</b></p>
+            <img src="simon.png" alt="Simon">
+            <p>Santiago <b>Simón</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>34</b></p>
+            <img src="galoppo.png" alt="Galoppo">
+            <p>Giuliano <b>Galoppo</b></p>
+        </div>
+    </div>
 
-<div style="display:flex;justify-content:center;gap:20px;text-align:center;">
+    <div class="jugadores">
+        <div class="jugador">
+            <p><b>39</b></p>
+            <img src="lencina.png" alt="Lencina">
+            <p>Santiago <b>Lencina</b></p>
+        </div>
+    </div>
 
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>16</b></p>
-	<img src="bustos.png" style="max-width:100%;height:auto;">
-	<p>Fabricio <b>Bustos</b></p>
-	</div>
+    <h2>Delanteros</h2>
+    <div class="jugadores">
+        <div class="jugador">
+            <p><b>9</b></p>
+            <img src="borja.png" alt="Borja">
+            <p>Miguel <b>Borja</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>11</b></p>
+            <img src="colidio.png" alt="Colidio">
+            <p>Facundo <b>Colidio</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>15</b></p>
+            <img src="driussi.png" alt="Driussi">
+            <p>Sebastián <b>Driussi</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>19</b></p>
+            <img src="tapia.png" alt="Tapia">
+            <p>Gonzalo <b>Tapia</b></p>
+        </div>
+    </div>
 
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>17</b></p>
-	<img src="diaz.png" style="max-width:100%;height:auto;">
-	<p>Paulo <b>Diaz</b></p>
-	</div>
+    <div class="jugadores">
+        <div class="jugador">
+            <p><b>32</b></p>
+            <img src="ruberto.png" alt="Ruberto">
+            <p>Agustín <b>Ruberto</b></p>
+        </div>
+        <div class="jugador">
+            <p><b>38</b></p>
+            <img src="subiabre.png" alt="Subiabre">
+            <p>Ian <b>Subiabre</b></p>
+        </div>
+    </div>
 
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>20</b></p>
-	<img src="casco.png" style="max-width:100%;height:auto;">
-	<p>Milton <b>Casco</b></p>
-	</div>
+</main>
 
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>21</b></p>
-	<img src="acuna.png" style="max-width:100%;height:auto;">
-	<p>Marcos <b>Acuña</b></p>
-	</div>
-</div>
-
-<div style="display:flex;justify-content:center;gap:20px;text-align:center;">
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>28</b></p>
-	<img src="martinez-cuarta.png" style="max-width:100%;height:auto;">
-	<p>Lucas <b>Martinez Cuarta</b></p>
-	</div>
-</div>
-
-<h2>Mediocampistas</h2>
-
-<div style="display:flex;justify-content:center;gap:20px;text-align:center;">
-
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>5</b></p>
-	<img src="kranevitter.png" style="max-width:100%;height:auto;">
-	<p>Matias <b>Kranevitter</b></p>
-	</div>
-
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>7</b></p>
-	<img src="rojas.png" style="max-width:100%;height:auto;">
-	<p>Matias <b>Rojas</b></p>
-	</div>
-
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>8</b></p>
-	<img src="meza.png" style="max-width:100%;height:auto;">
-	<p>Maximiliano <b>Meza</b></p>
-	</div>
-
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>10</b></p>
-	<img src="lanzini.png" style="max-width:100%;height:auto;">
-	<p>Manuel <b>Lanzini</b></p>
-	</div>
-</div>
-
-<div style="display:flex;justify-content:center;gap:20px;text-align:center;">
-
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>18</b></p>
-	<img src="martinez.png" style="max-width:100%;height:auto;">
-	<p>Gonzalo <b>Martinez</b></p>
-	</div>
-
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>22</b></p>
-	<img src="castano.png" style="max-width:100%;height:auto;">
-	<p>Kevin <b>Castaño</b></p>
-	</div>
-
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>24</b></p>
-	<img src="perez.png" style="max-width:100%;height:auto;">
-	<p>Enzo <b>Perez</b></p>
-	</div>
-
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>26</b></p>
-	<img src="fernandez.png" style="max-width:100%;height:auto;">
-	<p>Ignacio <b>Fernandez</b></p>
-	</div>
-</div>
-
-<div style="display:flex;justify-content:center;gap:20px;text-align:center;">
-
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>29</b></p>
-	<img src="aliendro.png" style="max-width:100%;height:auto;">
-	<p>Rodrigo <b>Aliendro</b></p>
-	</div>
-
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>30</b></p>
-	<img src="mastantuono.png" style="max-width:100%;height:auto;">
-	<p>Franco <b>Mastantuono</b></p>
-	</div>
-
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>31</b></p>
-	<img src="simon.png" style="max-width:100%;height:auto;">
-	<p>Santiago <b>Simon</b></p>
-	</div>
-
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>34</b></p>
-	<img src="galoppo.png" style="max-width:100%;height:auto;">
-	<p>Giulano <b>Galoppo</b></p>
-	</div>
-</div>
-
-<div style="display:flex;justify-content:center;gap:20px;text-align:center;">
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>39</b></p>
-	<img src="lencina.png" style="max-width:100%;height:auto;">
-	<p>Santiago <b>Lencina</b></p>
-	</div>
-</div>
-
-<h2>Delanteros</h2>
-
-<div style="display:flex;justify-content:center;gap:20px;text-align:center;">
-
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>9</b></p>
-	<img src="borja.png" style="max-width:100%;height:auto;">
-	<p>Miguel <b>Borja</b></p>
-	</div>
-
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>11</b></p>
-	<img src="colidio.png" style="max-width:100%;height:auto;">
-	<p>Facundo <b>Colidio</b></p>
-	</div>
-
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>15</b></p>
-	<img src="driussi.png" style="max-width:100%;height:auto;">
-	<p>Sebastian <b>Driussi</b></p>
-	</div>
-
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>19</b></p>
-	<img src="tapia.png" style="max-width:100%;height:auto;">
-	<p>Gonzalo <b>Tapia</b></p>
-	</div>
-</div>
-
-<div style="display:flex;justify-content:center;gap:20px;text-align:center;">
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>32</b></p>
-	<img src="ruberto.png" style="max-width:100%;height:auto;">
-	<p>Agustin <b>Ruberto</b></p>
-	</div>
-	<div>
-	<p style="background-color:red; font-size:25;color:white;"><b>38</b></p>
-	<img src="subiabre.png" style="max-width:100%;height:auto;">
-	<p>Ian <b>Subiabre</b></p>
-	</div>
-</div>
-</div>
 <footer>
-<b>Redes Sociales</b>
-<a href="https://www.facebook.com/riverplateoficial">
-<img src="logo-facebook.png" style="width:35px;"></a>
-
-<a href=https://www.instagram.com/riverplate/>
-<img src="logo-instagram2.png" style="width:35px;"></a>
-
-<a href="https://x.com/@RiverPlate">
-<img src="twitter.png" style="width:35px;"></a>
-
-<a href="https://www.tiktok.com/@riverplate">
-<img src="tik-tok2.png" style="width:25px;"></a>
+    <b>Redes Sociales</b>
+    <a href="https://www.facebook.com/riverplateoficial">
+        <img src="logo-facebook.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/riverplate/">
+        <img src="logo-instagram2.png" alt="Instagram">
+    </a>
+    <a href="https://x.com/@RiverPlate">
+        <img src="twitter.png" alt="X (Twitter)">
+    </a>
+    <a href="https://www.tiktok.com/@riverplate">
+        <img src="tik-tok2.png" alt="TikTok">
+    </a>
 </footer>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
